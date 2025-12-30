@@ -523,7 +523,7 @@
                     const cell = document.createElement('div');
                     cell.className = `cell ${(r+c)%2?'dark':'light'}`;
                     if(selected?.r === r && selected?.c === c) cell.classList.add('bg-yellow-500/40');
-                    if(moves.some(m => m.r === r && m.c === c)) cell.classList.add('ring-2 ring-inset ring-green-500');
+                    if(moves.some(m => m.r === r && m.c === c)) cell.classList.add('ring-2', 'ring-inset', 'ring-green-500');
                     const p = board[r][c];
                     if(p) {
                         const div = document.createElement('div');
